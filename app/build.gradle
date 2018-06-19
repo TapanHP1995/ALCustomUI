@@ -6,6 +6,20 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 27
+
+    //APPLOZIC
+    packagingOptions {
+        //Your other packaging options go here
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/ECLIPSE_.SF'
+        exclude 'META-INF/ECLIPSE_.RSA'
+    }
+
     defaultConfig {
         applicationId "com.inexture.alcustomui"
         minSdkVersion 15
@@ -30,4 +44,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //added applozic dependency here
+    compile 'com.applozic.communication.message:mobicomkit:5.8.4'
 }
