@@ -65,9 +65,9 @@
         </receiver>
 
         <meta-data android:name="com.applozic.application.key"
-            android:value="YOUR_APPLOZIC_APPLICATION_KEY" />
+            android:value="d49c0963288af20aba61ec7399e01d55" />
         <meta-data android:name="main_folder_name"
-            android:value="your-media-folder-name" /> <!-- Attachment Folder Name -->
+            android:value="AlUserDemo" /> <!-- Attachment Folder Name -->
 
     </application>
 
